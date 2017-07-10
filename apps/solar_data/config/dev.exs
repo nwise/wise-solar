@@ -5,3 +5,5 @@ config :solar_data, SolarData.Repo,
   database: "solar_data_dev",
   username: "nathanwise",
   password: ""
+
+import_config "#{Mix.env}.secret.exs"

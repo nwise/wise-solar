@@ -19,7 +19,7 @@ defmodule SolarData.Mixfile do
   # Type "mix help compile.app" for more information
   def application do
     # Specify extra applications you'll use from Erlang/Elixir
-    [extra_applications: [:logger, :tzdata], mod: {SolarData, []}]
+    [extra_applications: [:logger], mod: {SolarData, []}]
   end
 
   # Dependencies can be Hex packages:
@@ -41,7 +41,9 @@ defmodule SolarData.Mixfile do
       {:ecto, "~> 2.0"},
       {:timex, "~> 3.1"},
       {:timex_ecto, "~> 3.1"},
-      {:csv, "~> 2.0.0"}
+      {:csv, "~> 2.0.0"},
+      {:httpoison, "~> 0.12"},
+      {:poison, "~> 3.1"}
     ]
   end
 end
